@@ -1,0 +1,68 @@
+body {
+    background-color: lightgreen;
+    margin: 0;
+}
+
+header {
+    background-color: green;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    color: blue;
+}
+
+#tasti {
+    width: 100%;
+}
+
+#tasti > nav {
+    font-size: xx-large;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*#tasti a {
+}
+*/
+
+#titolosottotitolo {
+    text-align: center;
+}
+
+#slider {
+    text-align: center;
+    padding: 50px;
+}
+
+#sezione-orizzontale {
+    display: flex;
+    gap: 15px;  /* spazio tra le colonne - regola questo valore */
+    padding: 20px;
+    background-color: #e8e0d0;
+    min-height: 250px;
+}
+  
+.colonna {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 8px;  /* opzionale: angoli arrotondati */
+    padding: 30px 20px;
+    text-align: center;
+    /*font-family: Arial, sans-serif;*/
+    /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);  ombra leggera */
+}
+
+#programma {
+    height: 100px;
+    background-color: lightpink;
+}
+
+footer {
+    background-color: brown;
+    width: 100%;
+}
