@@ -20,7 +20,6 @@ header {
 #tasti > nav {
     font-size: xx-large;
     width: 100%;
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,14 +29,40 @@ header {
 }
 */
 
+.slider {
+    margin: 100px auto;
+    width: 90%;
+    border: 5px solid red;
+    padding-left: 0px;
+    display: flex;
+    overflow-x: auto;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+#gruppo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.card {
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    background: lightseagreen;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+
 #titolosottotitolo {
     text-align: center;
 }
 
-#slider {
-    text-align: center;
-    padding: 50px;
-}
 
 #sezione-orizzontale {
     display: flex;
