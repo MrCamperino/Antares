@@ -42,7 +42,6 @@ header > img {
     overflow-x: auto;
 
     -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
 }
 
 #slider::-webkit-scrollbar {
@@ -54,6 +53,7 @@ header > img {
     align-items: center;
     gap: 1em;
     animation: gira 5s infinite linear;
+    padding-right: 1em;
 }
 
 .card {
@@ -70,6 +70,18 @@ header > img {
 @keyframes gira {
     from {translate: 0;}
     to {translate: -100%;}
+}
+
+/* Solo Firefox esegue questo, Chrome lo ignora */
+@supports (-moz-appearance: none) {
+    .gruppo {
+        animation: none; /* disabilita animazione su Firefox */
+    }
+    
+    /* Oppure nascondi il secondo gruppo su Firefox */
+    .gruppo:last-child {
+        display: none;
+    }
 }
 
 #titolosottotitolo {
