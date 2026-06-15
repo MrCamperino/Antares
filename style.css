@@ -52,7 +52,7 @@ header > img {
     display: flex;
     align-items: center;
     gap: 1em;
-    animation: gira 5s infinite linear;
+    animation: gira 10s infinite linear;
     padding-right: 1em;
 }
 
