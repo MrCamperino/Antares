@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.phone_bg {
+    display: none;
+}
+
+
+@media (max-width: 500px) {
+    /*
+    main {
+        background-image: url("./images/backgrounds/phone_bg.jpg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 100vh;
+        aspect-ratio: 9 / 16;
+    }
+    */
+    
+
+    .phone_bg {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+body {
+    background-color: lightgreen;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: green;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: clamp(15px, 3vw, 40px);
+    gap: clamp(15px, 3vw, 40px);
+    color: #fff7c5;
+    flex-wrap: wrap;
+}
+  
+header p:first-child {
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-weight: bold;
+    letter-spacing: clamp(2px, 0.5vw, 5px);
+    flex-shrink: 0;
+}
+  
+header p:nth-child(2) {
+    font-size: clamp(1.8rem, 5vw, 4.5rem);
+    font-weight: 900;
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+    letter-spacing: clamp(2px, 0.8vw, 6px);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+header img {
+    width: clamp(150px, 10vw, 220px);
+    height: auto;
+    flex-shrink: 0;
+    display: block;
+}
+
+footer {
+    background-color: darkgreen;
+    color: #fff7c5;
+}
+/*
+header {
+    background-color: green;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    color: blue;
+}
+
+header > img {
+    width: 10%;
+    height: auto;
+}
+*/
